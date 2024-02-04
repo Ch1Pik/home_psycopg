@@ -13,6 +13,7 @@ def create_tables(cur):
     client_email VARCHAR(100) NOT NULL
     );
     """)
+    
     #Создание отдельной таблицы с клиентскими номерами
     cur.execute("""
     CREATE TABLE IF NOT EXISTS phone_numbers(
